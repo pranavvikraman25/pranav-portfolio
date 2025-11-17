@@ -10,7 +10,8 @@ import {
   useGLTF,
 } from "@react-three/drei";
 
-function ModelPlaceholder({ modelPath, caption }: any) {
+function ModelPlaceholder({ modelPath, caption }) {
+
   try {
     const { scene } = useGLTF(modelPath);
     return <primitive object={scene} scale={[1, 1, 1]} />;
