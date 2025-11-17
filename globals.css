@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0b0b0b;
+  --accent: #4D6BFF;
+  --accent-2: #7A4DFF;
+  --glow: rgba(77,107,255,0.14);
+  --neon: #FF6A3D;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body{
+  background-color:var(--bg);
+  color: #F4F4F4;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* small helpers used by the component */
+.font-display { font-weight: 700; }
